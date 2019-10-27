@@ -1,0 +1,18 @@
+<div class="contn">
+    <form [formGroup]="task" (ngSubmit)="update(task.value)">
+    <div class="form-group">
+      <label>Id</label>
+      <input type="text" class="form-control" formControlName="Id" placeholder="enter id">
+    </div>
+    <div class="form-group">
+      <label>Title</label>
+      <input type="text" class="form-control" formControlName="Title" placeholder="enter status">
+    </div>
+    <div class="form-group">
+      <label>Status</label>
+      <input type="text" class="form-control" formControlName="Status" placeholder="enter status">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit Data</button>
+    </form>
+  </div>
+
